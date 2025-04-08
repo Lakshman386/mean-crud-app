@@ -133,7 +133,7 @@ This setup:
 
 ### ✅ CI/CD Configuration
 
-![CI/CD Workflow](c:\Users\sanag\OneDrive\Pictures\Screenshots\Screenshot 2025-04-08 160400.png)
+![alt text](<Screenshot 2025-04-08 160400.png>)
 
 ### 🐳 Docker Build & Push
 
