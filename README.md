@@ -137,19 +137,19 @@ This setup:
 
 ### 🐳 Docker Build & Push
 
-![Docker Build](c:\Users\sanag\OneDrive\Pictures\Screenshots\Screenshot 2025-04-08 160143.png)
+![Screenshot 2025-04-08 160143](https://github.com/user-attachments/assets/1142b81c-18b2-42a2-a35b-29c7796a1a11)
 
 ### 🚀 Deployment in Action
 
-![Deployment Output](c:\Users\sanag\OneDrive\Pictures\Screenshots\Screenshot 2025-04-08 153324.png)
+![Screenshot 2025-04-08 153324](https://github.com/user-attachments/assets/ba384ec5-d9ba-440b-9e16-e9d597428196)
 
 ### 🖥️ Live UI
 
-![Frontend UI](c:\Users\sanag\OneDrive\Pictures\Screenshots\Screenshot 2025-04-08 153509.png)
+![Screenshot 2025-04-08 153509](https://github.com/user-attachments/assets/828cd413-ebe0-4547-9608-3571f77e5ff1)
 
 ### 🌐 Nginx Infrastructure
 
-![Nginx Config](c:\Users\sanag\OneDrive\Pictures\Screenshots\Screenshot 2025-04-08 160731.png)
+![Screenshot 2025-04-08 160731](https://github.com/user-attachments/assets/b8a085cf-8120-4c3e-8c04-c52e1edf14eb)
 
 ---
 
