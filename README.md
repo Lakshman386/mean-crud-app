@@ -51,7 +51,7 @@ The app will be available at: http://15.206.229.63/tutorials
 
       Restart containers using Docker Compose
 
-![image](https://github.com/user-attachments/assets/88d7f347-7467-4602-a011-715ff6a09605)
+[image](https://github.com/user-attachments/assets/88d7f347-7467-4602-a011-715ff6a09605)
 
 
 🔐 Secrets Required (GitHub Repository Settings → Secrets and Variables)
