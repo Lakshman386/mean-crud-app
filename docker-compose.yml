@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  mongo:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    image: lakshman386/backend-app
+    depends_on:
+      - mongo
+    ports:
+      - "3000:3000"
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/mean-crud
+
+  frontend:
+    image: lakshman386/frontend-app
+    ports:
+      - "4200:80"
+
+volumes:
+  mongo-data:
+
