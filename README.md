@@ -133,7 +133,7 @@ This setup:
 
 ### ✅ CI/CD Configuration
 
-![alt text](<Screenshot 2025-04-08 160400.png>)
+![Screenshot 2025-04-08 160400](https://github.com/user-attachments/assets/e00f16ac-5e39-4e23-ab26-7b03c9e184ca)
 
 ### 🐳 Docker Build & Push
 
