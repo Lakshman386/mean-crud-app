@@ -1,0 +1,43 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v3
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build and Push Backend
+      run: |
+        docker build -t lakshman386/backend-app ./backend
+        docker push lakshman386/backend-app
+
+    - name: Build and Push Frontend
+      run: |
+        docker build -t lakshman386/frontend-app ./frontend
+        docker push lakshman386/frontend-app
+
+    - name: SSH and Deploy
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.VM_HOST }}
+        username: ${{ secrets.VM_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          cd /home/ubuntu/mean-crud-app
+          docker-compose pull
+          docker-compose down
+          docker-compose up -d
+
