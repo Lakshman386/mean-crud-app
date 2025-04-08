@@ -36,6 +36,7 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
+          git clone https://github.com/Lakshman386/mean-crud-app.git
           cd /home/ubuntu/mean-crud-app
           docker-compose pull
           docker-compose down
